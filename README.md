@@ -1,5 +1,9 @@
 # AngularEldenRingAPI
 
+Ce projet utilise l'API Elden Ring (https://github.com/deliton/eldenring-api)
+Le but est de récuperer les données de l'API puis les utilisées pour la création d'un questionaire aleatoire.
+Il y aura une gestion d'utilisateur avec leur meilleur score ajouter plus tard
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
 ## Development server
