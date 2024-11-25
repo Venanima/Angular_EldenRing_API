@@ -1,0 +1,8 @@
+@if (userObserve | async){
+  @for (user of users; track user.login){
+    <p>Nom utilisateur : {{ user.login }}</p>
+    <p>Role utilisateur : {{ user.role }}</p>
+    <p>Meilleur score : {{ user.bestscore }}</p>
+    <hr>
+  }
+}

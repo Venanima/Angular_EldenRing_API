@@ -1,0 +1,13 @@
+
+@if(observData$ | async){
+  @if (currentPage < 5 ){
+    <h1>{{ currentQuestion[currentPage].question }}</h1>
+    <h2>{{ usedWeapons[currentPage].name }}</h2>
+    <button (click)="changePage(button.answer)" *ngFor="let button of buttons | randomShuffle">{{ button.weap[currentQuestion[currentPage].type] }}</button>
+<!--    <button (click)="changePage()">{{ randomAnswerButton() }}</button>-->
+  } @else {
+    <p>Votre score est de {{ score }}</p>
+  }
+}@else{
+  <p>Chargement du Quizz</p>
+}
